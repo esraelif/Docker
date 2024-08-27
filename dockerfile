@@ -1,24 +1,16 @@
 # Altyapı
-FROM current-alpine3.20
 
+FROM node:current-alpine3.20
 
+# Çalışma Alanı
 
-# -----------------------------------------
-
-
-
-#Çalışma ortamı
 WORKDIR /app
-# -----------------------------------------
+
 # Dosyaları Aktar
 
-#  COPY hello.js /app
+# COPY hello.js /app
+
 COPY . .
-
-
-
-# -----------------------------------------
-
 
 # Komut Çalıştır
 
